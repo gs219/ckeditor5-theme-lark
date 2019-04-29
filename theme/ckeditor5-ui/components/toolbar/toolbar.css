@@ -3,14 +3,14 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
  */
 
-@import "../../../mixins/_rounded.css";
+@import '../../../mixins/_rounded.css';
 
 .ck.ck-toolbar {
 	@mixin ck-rounded-corners;
 
 	background: var(--ck-color-toolbar-background);
 	padding: 0 var(--ck-spacing-small);
-	border: 1px solid var(--ck-color-toolbar-border);
+	/* border-bottom: 1px solid var(--ck-color-toolbar-border); */
 
 	& > * {
 		/* (#11) Separate toolbar items. */
@@ -54,7 +54,7 @@
 	width: 1px;
 	margin-top: 0;
 	margin-bottom: 0;
-	background: var(--ck-color-toolbar-border);
+	/* background: var(--ck-color-toolbar-border); */
 }
 
 .ck.ck-toolbar__newline {

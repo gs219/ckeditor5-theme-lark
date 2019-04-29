@@ -3,10 +3,10 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
  */
 
-@import "@ckeditor/ckeditor5-ui/theme/mixins/_rwd.css";
+@import '@ckeditor/ckeditor5-ui/theme/mixins/_rwd.css';
 
 .ck.ck-link-form {
-	padding: var(--ck-spacing-standard);
+	padding: var(--ck-spacing-small);
 
 	&:focus {
 		/* https://github.com/ckeditor/ckeditor5-link/issues/90 */
@@ -14,15 +14,15 @@
 	}
 
 	& > :not(:first-child) {
-		margin-left: var(--ck-spacing-standard);
+		margin-left: var(--ck-spacing-small);
 	}
 
 	@mixin ck-media-phone {
 		padding: 0;
-		width: calc(.8 * var(--ck-input-text-width));
+		width: calc(0.8 * var(--ck-input-text-width));
 
 		& .ck-labeled-input {
-			margin: var(--ck-spacing-standard) var(--ck-spacing-standard) 0;
+			margin: var(--ck-spacing-small) var(--ck-spacing-small) 0;
 
 			& .ck-input-text {
 				min-width: 0;
@@ -31,8 +31,8 @@
 		}
 
 		& .ck-button {
-			padding: var(--ck-spacing-standard);
-			margin-top: var(--ck-spacing-standard);
+			padding: var(--ck-spacing-small);
+			margin-top: var(--ck-spacing-small);
 			margin-left: 0;
 
 			border-radius: 0;
@@ -45,4 +45,3 @@
 		}
 	}
 }
-

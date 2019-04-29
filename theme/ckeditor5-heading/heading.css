@@ -6,10 +6,10 @@
 /* Resize dropdown's button label. */
 .ck.ck-dropdown.ck-heading-dropdown {
 	& .ck-dropdown__button .ck-button__label {
-		width: 8em;
+		width: 5em;
 	}
 
 	& .ck-dropdown__panel .ck-list__item {
-		min-width: 18em;
+		min-width: 5em;
 	}
 }

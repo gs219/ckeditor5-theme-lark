@@ -4,7 +4,8 @@
  */
 
 :root {
-	--ck-icon-size: calc(var(--ck-line-height-base) * var(--ck-font-size-normal));
+	--ck-icon-size: 16px;
+	/* --ck-icon-size: calc(var(--ck-line-height-base) * var(--ck-font-size-normal)); */
 }
 
 .ck.ck-icon {
@@ -12,7 +13,7 @@
 	height: var(--ck-icon-size);
 
 	/* Multiplied by the height of the line in "px" should give SVG "viewport" dimensions */
-	font-size: .8333350694em;
+	font-size: 0.8333350694em;
 
 	color: inherit;
 
@@ -30,8 +31,8 @@
 		color: inherit;
 
 		&:not([fill]) {
-				/* Needed by FF. */
-				fill: currentColor;
+			/* Needed by FF. */
+			fill: currentColor;
 		}
 	}
 }

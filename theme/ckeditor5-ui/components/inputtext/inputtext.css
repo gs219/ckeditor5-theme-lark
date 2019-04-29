@@ -3,9 +3,9 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
  */
 
-@import "../../../mixins/_rounded.css";
-@import "../../../mixins/_focus.css";
-@import "../../../mixins/_shadow.css";
+@import '../../../mixins/_rounded.css';
+@import '../../../mixins/_focus.css';
+@import '../../../mixins/_shadow.css';
 
 :root {
 	--ck-input-text-width: 18em;
@@ -25,11 +25,11 @@
 
 	/* Apply some smooth transition to the box-shadow and border. */
 	transition-property: box-shadow, border;
-	transition: .2s ease-in-out;
+	transition: 0.2s ease-in-out;
 
 	&:focus {
 		@mixin ck-focus-ring;
-		@mixin ck-box-shadow var(--ck-focus-outer-shadow), var(--ck-inner-shadow);
+		@mixin ck-box-shadow var(--ck-inner-shadow);
 	}
 
 	&[readonly] {
@@ -45,7 +45,7 @@
 
 	&.ck-error {
 		border-color: var(--ck-color-input-error-border);
-		animation: ck-text-input-shake .3s ease both;
+		animation: ck-text-input-shake 0.3s ease both;
 
 		&:focus {
 			@mixin ck-box-shadow var(--ck-focus-error-outer-shadow), var(--ck-inner-shadow);

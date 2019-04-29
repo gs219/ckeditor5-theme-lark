@@ -3,24 +3,23 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
  */
 
-@import "../../../mixins/_rounded.css";
-@import "../../../mixins/_disabled.css";
-@import "../../../mixins/_shadow.css";
-@import "../../../mixins/_focus.css";
-@import "../../mixins/_button.css";
+@import '../../../mixins/_rounded.css';
+@import '../../../mixins/_disabled.css';
+@import '../../../mixins/_shadow.css';
+@import '../../../mixins/_focus.css';
+@import '../../mixins/_button.css';
 
 .ck.ck-editor__editable:not(.ck-editor__nested-editable) {
 	@mixin ck-rounded-corners;
 
-	&.ck-focused {
+	/* &.ck-focused {
 		@mixin ck-focus-ring;
 		@mixin ck-box-shadow var(--ck-inner-shadow);
-	}
+	} */
 }
 
 .ck.ck-editor__editable_inline {
-	overflow: auto;
-	padding: 0 var(--ck-spacing-standard);
+	/* padding: 0 var(--ck-spacing-standard); */
 	border: 1px solid transparent;
 
 	/* https://github.com/ckeditor/ckeditor5-theme-lark/issues/116 */
@@ -35,13 +34,13 @@
 }
 
 /* https://github.com/ckeditor/ckeditor5-theme-lark/issues/111 */
-.ck.ck-balloon-panel.ck-toolbar-container[class*="arrow_n"] {
+.ck.ck-balloon-panel.ck-toolbar-container[class*='arrow_n'] {
 	&::after {
 		border-bottom-color: var(--ck-color-base-foreground);
 	}
 }
 
-.ck.ck-balloon-panel.ck-toolbar-container[class*="arrow_s"] {
+.ck.ck-balloon-panel.ck-toolbar-container[class*='arrow_s'] {
 	&::after {
 		border-top-color: var(--ck-color-base-foreground);
 	}

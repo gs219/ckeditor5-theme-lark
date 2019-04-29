@@ -3,11 +3,11 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
  */
 
-@import "../../../mixins/_focus.css";
-@import "../../../mixins/_shadow.css";
-@import "../../../mixins/_disabled.css";
-@import "../../../mixins/_rounded.css";
-@import "../../mixins/_button.css";
+@import '../../../mixins/_focus.css';
+@import '../../../mixins/_shadow.css';
+@import '../../../mixins/_disabled.css';
+@import '../../../mixins/_rounded.css';
+@import '../../mixins/_button.css';
 
 .ck.ck-button,
 a.ck.ck-button {
@@ -15,7 +15,7 @@ a.ck.ck-button {
 	@mixin ck-rounded-corners;
 
 	white-space: nowrap;
-	cursor: default;
+	cursor: pointer;
 	vertical-align: middle;
 	padding: var(--ck-spacing-tiny);
 	text-align: center;
@@ -35,7 +35,7 @@ a.ck.ck-button {
 	border: 1px solid transparent;
 
 	/* Apply some smooth transition to the box-shadow. */
-	transition: box-shadow 200ms ease-in-out;
+	transition: all 0.15s linear;
 
 	/* https://github.com/ckeditor/ckeditor5-theme-lark/issues/189 */
 	-webkit-appearance: none;
@@ -51,6 +51,7 @@ a.ck.ck-button {
 
 	/* https://github.com/ckeditor/ckeditor5-theme-lark/issues/70 */
 	&.ck-disabled {
+		cursor: not-allowed;
 		&:active,
 		&:focus {
 			/* The disabled button should have a slightly less visible shadow when focused. */

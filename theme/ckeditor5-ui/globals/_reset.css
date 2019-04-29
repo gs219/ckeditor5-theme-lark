@@ -8,7 +8,7 @@
 	is never smaller than a button with icon, additionally making sure that text-less buttons
 	are perfect squares. The value is also shared by other components which should stay "in-line"
 	with buttons. */
-	--ck-ui-component-min-height: 2.3em;
+	--ck-ui-component-min-height: 2.1em;
 }
 
 /**
@@ -37,7 +37,7 @@
 .ck.ck-reset_all * {
 	/* These are rule inherited by all children elements. */
 	border-collapse: collapse;
-	font: normal normal normal var(--ck-font-size-base)/var(--ck-line-height-base) var(--ck-font-face);
+	font: normal normal normal var(--ck-font-size-base) / var(--ck-line-height-base) var(--ck-font-face);
 	color: var(--ck-color-text);
 	text-align: left;
 	white-space: nowrap;
@@ -60,14 +60,14 @@
 	}
 
 	& textarea,
-	& input[type="text"],
-	& input[type="password"] {
+	& input[type='text'],
+	& input[type='password'] {
 		cursor: text;
 	}
 
 	& textarea[disabled],
-	& input[type="text"][disabled],
-	& input[type="password"][disabled] {
+	& input[type='text'][disabled],
+	& input[type='password'][disabled] {
 		cursor: default;
 	}
 
@@ -78,7 +78,7 @@
 
 	& button::-moz-focus-inner {
 		/* See http://stackoverflow.com/questions/5517744/remove-extra-button-spacing-padding-in-firefox */
-	    padding: 0;
-	    border: 0
+		padding: 0;
+		border: 0;
 	}
 }

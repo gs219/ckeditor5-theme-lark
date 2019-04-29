@@ -3,7 +3,7 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
  */
 
-@import "../../../mixins/_rounded.css";
+@import '../../../mixins/_rounded.css';
 
 :root {
 	--ck-tooltip-arrow-size: 5px;
@@ -23,11 +23,11 @@
 	 */
 	&.ck-tooltip_s {
 		bottom: calc(-1 * var(--ck-tooltip-arrow-size));
-		transform: translateY( 100% );
+		transform: translateY(100%);
 
 		& .ck-tooltip__text::after {
 			top: calc(-1 * var(--ck-tooltip-arrow-size));
-			transform: translateX( -50% );
+			transform: translateX(-50%);
 			border-color: transparent transparent var(--ck-color-tooltip-background) transparent;
 			border-width: 0 var(--ck-tooltip-arrow-size) var(--ck-tooltip-arrow-size) var(--ck-tooltip-arrow-size);
 		}
@@ -44,23 +44,24 @@
 	 */
 	&.ck-tooltip_n {
 		top: calc(-1 * var(--ck-tooltip-arrow-size));
-		transform: translateY( -100% );
+		transform: translateY(-100%);
 
 		& .ck-tooltip__text::after {
 			bottom: calc(-1 * var(--ck-tooltip-arrow-size));
-			transform: translateX( -50% );
+			transform: translateX(-50%);
 			border-color: var(--ck-color-tooltip-background) transparent transparent transparent;
 			border-width: var(--ck-tooltip-arrow-size) var(--ck-tooltip-arrow-size) 0 var(--ck-tooltip-arrow-size);
 		}
 	}
 
 	& .ck-tooltip__text {
-		@mixin ck-rounded-corners;
+		/* @mixin ck-rounded-corners; */
 
-		font-size: .9em;
+		font-size: 12px;
 		line-height: 1.5;
+		border-radius: 4px;
 		color: var(--ck-color-tooltip-text);
-		padding: var(--ck-spacing-small) var(--ck-spacing-medium);
+		padding: 3px 10px;
 		background: var(--ck-color-tooltip-background);
 		position: relative;
 		left: -50%;
@@ -77,6 +78,5 @@
 	/* For the transition to work, the tooltip must be controlled
 	using visibility+opacity. A delay prevents a "tooltip avalanche"
 	i.e. when scanning the toolbar with mouse cursor. */
-	transition: opacity .2s ease-in-out .2s;
+	transition: opacity 0.2s ease-in-out 0.2s;
 }
-

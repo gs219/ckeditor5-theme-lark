@@ -3,8 +3,8 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
  */
 
-@import "../mixins/_focus.css";
-@import "../mixins/_shadow.css";
+@import '../mixins/_focus.css';
+@import '../mixins/_shadow.css';
 
 :root {
 	--ck-widget-outline-thickness: 3px;
@@ -12,7 +12,7 @@
 	--ck-widget-handler-animation-duration: 200ms;
 	--ck-widget-handler-animation-curve: ease;
 
-	--ck-color-widget-blurred-border: hsl(0, 0%, 87%);
+	--ck-color-widget-blurred-border: hsl(0, 0%, 89%);
 	--ck-color-widget-hover-border: hsl(43, 100%, 62%);
 	--ck-color-widget-editable-focus-background: var(--ck-color-base-background);
 	--ck-color-widget-drag-handler-icon-color: var(--ck-color-base-background);
@@ -71,8 +71,8 @@
 		   * background-color for the .ck-widget_selected state change,
 		   * visibility for hiding the handler,
 		   * opacity for the proper look of the icon when the handler disappears. */
-		transition:
-			background-color var(--ck-widget-handler-animation-duration) var(--ck-widget-handler-animation-curve),
+		transition: background-color var(--ck-widget-handler-animation-duration)
+				var(--ck-widget-handler-animation-curve),
 			visibility var(--ck-widget-handler-animation-duration) var(--ck-widget-handler-animation-curve),
 			opacity var(--ck-widget-handler-animation-duration) var(--ck-widget-handler-animation-curve);
 
